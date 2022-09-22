@@ -1,6 +1,7 @@
 package com.locacaoveiculos.controller;
 
 import com.locacaoveiculos.controller.dto.ParkingCreateDTO;
+import com.locacaoveiculos.controller.dto.ParkingDTO;
 import com.locacaoveiculos.controller.mapper.ParkingMapper;
 import com.locacaoveiculos.model.Parking;
 import com.locacaoveiculos.service.ParkingService;
@@ -64,8 +65,8 @@ public class ParkingController {
     }
 
     @PostMapping("/{id}")
-    public ResponseEntity<ParkingDTO> exit(@PathVariable String id) {
-        Parking parking = parkingService.exit(id);
+    public ResponseEntity<ParkingDTO> checkOut(@PathVariable String id) {
+        Parking parking = parkingService.checkOut(id);
         return ResponseEntity.ok(parkingMapper.toParkingDTO(parking));
     }
 }

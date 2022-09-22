@@ -1,6 +1,6 @@
 package com.locacaoveiculos.controller.mapper;
 
-import com.locacaoveiculos.controller.ParkingDTO;
+import com.locacaoveiculos.controller.dto.ParkingDTO;
 import com.locacaoveiculos.controller.dto.ParkingCreateDTO;
 import com.locacaoveiculos.model.Parking;
 import org.modelmapper.ModelMapper;
